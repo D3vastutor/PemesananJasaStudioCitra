@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "202788633730",
+    "firebase_url": "https://pemesanan-jasa-studio-citra.firebaseio.com",
+    "project_id": "pemesanan-jasa-studio-citra",
+    "storage_bucket": "pemesanan-jasa-studio-citra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202788633730:android:4018eb1a45fe07ca",
+        "android_client_info": {
+          "package_name": "com.razusdev.pemesananjasastudiocitra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202788633730-1i9n7uvq9gf56oked4afgdjdr8fffk8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.razusdev.pemesananjasastudiocitra",
+            "certificate_hash": "7921BF1DFC9AE6B95AE37413ACDB9A61885530BB"
+          }
+        },
+        {
+          "client_id": "202788633730-vgckejera4jmu14jtd115eaksvasjtgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIriHV74qimKDDnC1wrksrDhwnmlX2tWw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202788633730-vgckejera4jmu14jtd115eaksvasjtgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
