@@ -108,6 +108,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
+    //method untuk memvberikan kondisi pada tombol back pada ActionBar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
                 finish();
