@@ -91,10 +91,15 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
          */
 
         DatabaseReference Profil = databaseReference.child(user.getUid()).child("Profile");
-        Profil.setValue(userInformation);
 
-        /*DatabaseReference Profil = Client.child("Profil");
-        Profil.child(user.getUid()).setValue(userInformation);*/
+        //memudahkan mengambil data satu-satu
+        DatabaseReference Nama = Profil.child("Nama");
+        Nama.setValue(userInformation.nm);
+        DatabaseReference Alamat = Profil.child("Alamat");
+        Alamat.setValue(userInformation.almt);
+
+        //memudahkan dalam menampilkan
+//        Profil.setValue(userInformation);
 
         //pesan jika berhasil
         Toast.makeText(this, "Informasi tersimpan !", Toast.LENGTH_LONG).show();
