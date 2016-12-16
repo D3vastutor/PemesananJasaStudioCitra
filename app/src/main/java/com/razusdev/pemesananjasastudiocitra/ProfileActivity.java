@@ -26,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private Button tombolLogout;
 
     //mendefinisikan database reference
-    private DatabaseReference Client;
+    private DatabaseReference databaseReference;
 
     //objek untuk penyimpanan database
     private EditText editTextNama, editTextAlamat;
@@ -50,7 +50,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }
 
         //induk schema dalam Firebase
-        Client = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 
         editTextNama = (EditText) findViewById(R.id.editTextNama);
         editTextAlamat = (EditText) findViewById(R.id.editTextAlamat);
@@ -89,8 +89,12 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         lalu di bawahnyalah tempat menyimpan user information.
         menyimpan data ini menggunakan setValue method, method ini menggunakan java objek
          */
-        DatabaseReference Profil = Client.child("Profil");
-        Profil.child(user.getUid()).setValue(userInformation);
+
+        DatabaseReference Profil = databaseReference.child(user.getUid()).child("Profile");
+        Profil.setValue(userInformation);
+
+        /*DatabaseReference Profil = Client.child("Profil");
+        Profil.child(user.getUid()).setValue(userInformation);*/
 
         //pesan jika berhasil
         Toast.makeText(this, "Informasi tersimpan !", Toast.LENGTH_LONG).show();
