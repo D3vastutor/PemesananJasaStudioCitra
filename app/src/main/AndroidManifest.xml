@@ -10,23 +10,49 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SplashScreen"
+            android:label="Splash"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Register"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity
             android:name=".NavigasiActivity"
             android:label="@string/title_activity_navigasi"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ProfileActivity"
-            android:parentActivityName=".NavigasiActivity"/>
-        <activity android:name=".CalendarActivity"
-            android:parentActivityName=".NavigasiActivity"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
 
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="ActivityProfil"
+            android:parentActivityName=".NavigasiActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="ActivityCalendar"
+            android:parentActivityName=".NavigasiActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
